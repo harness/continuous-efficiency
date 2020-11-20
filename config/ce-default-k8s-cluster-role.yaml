@@ -4,7 +4,7 @@ metadata:
   name: ce
 rules:
 - apiGroups: [""]
-  resources: ["pods", "nodes", "events", "namespaces","persistentvolumes","persistentvolumeclaims"]
+  resources: ["pods", "nodes", "nodes/proxy", "events", "namespaces","persistentvolumes","persistentvolumeclaims"]
   verbs: ["get", "list", "watch"]
 - apiGroups: ["apps", "extensions"]
   resources: ["statefulsets", "deployments", "daemonsets", "replicasets"]
